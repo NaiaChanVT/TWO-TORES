@@ -1,38 +1,60 @@
 /* Estilos para la barra de navegación */
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .menu {
   display: flex;
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .menu li {
-  margin: 0 1rem;
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
 }
 
 .menu li a {
-  display: block;
   text-decoration: none;
-    color: #222;
-
-  padding: 1rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  transition: all 0.3s ease-in-out;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .menu li a:hover {
-  background-color: #fff;
-  color: #fff;
-  border-radius: 5px;
+  color: #666;
 }
 
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.support {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.support:hover {
+  background-color: #666;
+}
 
 /* Estilos para el encabezado */
 header {
