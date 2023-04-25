@@ -70,16 +70,104 @@ let popupInterval = setInterval(showPopup, 5000);
     text-align: center;
   }
 
+
+
+
+
+
+  .popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  max-width: 90%;
+  background-color: #7E4FF2;
+  color: #FFF;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  display: none;
+}
+
+.popup h2 {
+  margin-top: 0;
+}
+
+.popup form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup label {
+  margin-top: 10px;
+}
+
+.popup input[type="text"],
+.popup select,
+.popup textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.popup button[type="submit"],
+.popup .close-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.popup button[type="submit"] {
+  background-color: #FFF;
+  color: #7E4FF2;
+}
+
+.popup button[type="submit"]:hover {
+  background-color: #7E4FF2;
+  color: #FFF;
+}
+
+.popup .close-btn {
+  background-color: #FFF;
+  color: #7E4FF2;
+}
+
+.popup .close-btn:hover {
+  background-color: #7E4FF2;
+  color: #FFF;
+}
+
 </style>
 
     
 <nav>
+  <a href="#"><img src="logo.png" alt="Logo" class="logo"></a>
   <ul class="menu">
     <li><a href="#">Inicio</a></li>
     <li><a href="#">Características</a></li>
     <li><a href="#">Descargar</a></li>
   </ul>
+  <a href="#" class="support">Soporte</a>
 </nav>
+
+
 
 
 <header>
@@ -168,6 +256,29 @@ let popupInterval = setInterval(showPopup, 5000);
     <p>Todos los derechos reservados &copy; Two-tores</p>
   </div>
 </footer>
+
+
+<div class="popup-overlay"></div>
+<div class="popup">
+  <h2>Soporte</h2>
+  <form>
+    <label for="select">Seleccione una opción:</label>
+    <select id="select">
+      <option value="error-pagina">Error de página</option>
+      <option value="error-app">Error de aplicación</option>
+      <option value="otro">Otro</option>
+    </select>
+    <label for="subject">Asunto:</label>
+    <input type="text" id="subject" name="subject">
+    <label for="message">Mensaje:</label>
+    <textarea id="message" name="message"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+  <button class="close-btn">Cerrar</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="popup.js"></script>
 
 
   <script src="script.js"></script>
