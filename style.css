@@ -55,32 +55,30 @@ nav {
 .support:hover {
   background-color: #666;
 }
-
-/* Estilos para el encabezado */
-header {
-  text-align: center;
-  padding: 50px 0;
-  background-color: #eee;
-}
-
-h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 24px;
-  margin-bottom: 50px;
-}
-
-button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 18px;
-  border-radius: 5px;
-  cursor: pointer;
+/* Estilos para la barra de navegación en dispositivos móviles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+  
+  .menu {
+    text-align: center;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  
+  .menu li {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .support {
+    text-align: center;
+    margin-top: 10px;
+  }
 }
 
 /* Estilos para las características */
@@ -178,6 +176,14 @@ h2{
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
+@media only screen and (max-width: 600px) {
+  /* Estilos para dispositivos móviles */
+  .screenshots img {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
 /* Estilos para el pie de página */
 footer {
   background-color: #f2f2f2;
@@ -250,6 +256,53 @@ footer {
   text-align: center;
 }
 
+/* Estilos para el pie de página en dispositivos móviles */
+@media only screen and (max-width: 600px) {
+
+  footer {
+    padding: 20px 0;
+    font-size: 12px;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  .footer-logo {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-logo img {
+    max-width: 80px;
+  }
+
+  .footer-links {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-links li {
+    margin: 0 10px;
+  }
+
+  .footer-social {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-payment {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+}
+ 
 
 
 /* Estilos generales */
@@ -287,7 +340,18 @@ body {
   .screenshots img {
     width: 100%;
   }
+
+  .review-card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .review-card img {
+    height: auto;
+  }
 }
+
 #reviews {
   background-color: #f9f9f9;
   padding: 50px 0;
@@ -343,6 +407,7 @@ body {
   line-height: 1.5;
   margin-top: auto;
 }
+
 .screenshot.show {
   animation: screenshot-show 0.8s ease-out forwards;
 }
