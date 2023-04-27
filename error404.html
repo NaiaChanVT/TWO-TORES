@@ -4,16 +4,37 @@
     <title>Error 404 - ページが見つかりません</title>
     <link rel="stylesheet" type="text/css" href="body.css">
     <style>              
-        .warning-message {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #FFF;
-            padding: 20px;
-            border: 1px solid #FF69B4;
-            border-radius: 5px;
-            text-align: center;
+       /* Estilos para la barra de navegación en dispositivos móviles */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .menu {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu li {
+    margin: 10px 0;
+  }
+  
+  .support {
+    margin-top: 20px;
+  }
+}
+
+/* Estilos para el mensaje de advertencia en dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .warning-message {
+    padding: 10px;
+  }
+}
+
           </style>
 </head>
 <body>
