@@ -1,18 +1,18 @@
-Two-Tores
+## Two-Tores
 Two-Tores es una aplicación de gestión de tareas para equipos de trabajo. La aplicación se centra en la simplicidad y la eficiencia para ayudar a los usuarios a gestionar sus tareas de manera más efectiva.
 
-Características
-Gestión de tareas: La aplicación permite a los usuarios crear y administrar tareas, asignar tareas a miembros del equipo, establecer fechas límite y establecer prioridades.
+### Características
+- Gestión de tareas: La aplicación permite a los usuarios crear y administrar tareas, asignar tareas a miembros del equipo, establecer fechas límite y establecer prioridades.
 
-Colaboración: Los miembros del equipo pueden trabajar juntos en las tareas y dejar comentarios y notas para mantener a todos informados sobre el progreso.
+- Colaboración: Los miembros del equipo pueden trabajar juntos en las tareas y dejar comentarios y notas para mantener a todos informados sobre el progreso.
 
-Seguimiento de tiempo: Los usuarios pueden registrar el tiempo que dedican a cada tarea para una mejor gestión de su tiempo y rendimiento.
+- Seguimiento de tiempo: Los usuarios pueden registrar el tiempo que dedican a cada tarea para una mejor gestión de su tiempo y rendimiento.
 
-Recordatorios: La aplicación envía recordatorios automáticos para las tareas pendientes, asegurándose de que los usuarios no se olviden de sus responsabilidades.
+- Recordatorios: La aplicación envía recordatorios automáticos para las tareas pendientes, asegurándose de que los usuarios no se olviden de sus responsabilidades.
 
-Integraciones: Two-Tores se integra con otras aplicaciones populares, como Slack y Google Calendar, para una mayor eficiencia y comodidad.
+- Integraciones: Two-Tores se integra con otras aplicaciones populares, como Slack y Google Calendar, para una mayor eficiencia y comodidad.
 
-Novedades
+### Novedades
 Modo oscuro: Ahora puedes activar el modo oscuro en la aplicación para reducir la fatiga visual y ahorrar energía en dispositivos móviles.
 
 Etiquetas de tarea: Puedes añadir etiquetas a tus tareas para una mejor organización y filtrado.
