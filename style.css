@@ -290,6 +290,7 @@ footer {
 
   .footer-links li {
     margin: 0 10px;
+   aling-items: center;
   }
 
   .footer-social {
