@@ -35,123 +35,122 @@ let popupInterval = setInterval(showPopup, 5000);
 </div>
 
 <style>
- #popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #98FB98;
-  color: #008000;
-  text-align: center;
-  padding: 10px;
-  z-index: 9999;
+ /* Popup */
+#popup {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #98FB98;
+color: #008000;
+text-align: center;
+padding: 10px;
+z-index: 9999;
 }
 
 #popup img {
-  height: 25px;
-  margin-right: 5px;
+height: 25px;
+margin-right: 5px;
 }
 
 #popup span {
-  font-size: 18px;
-  font-weight: bold;
+font-size: 18px;
+font-weight: bold;
 }
+
 .animate {
-  opacity: 0;
+opacity: 0;
 }
 
 .fade-in {
-  opacity: 1;
-  transition: opacity 1s ease-in-out;
+opacity: 1;
+transition: opacity 1s ease-in-out;
 }
 
-  .center-re{
-    text-align: center;
-  }
-
-
-
-
-
-
-  .popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-  display: none;
+.center-re {
+text-align: center;
 }
 
+/* Popup Overlay */
+.popup-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 999;
+display: none;
+}
+
+/* Popup */
 .popup {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  max-width: 90%;
-  background-color: #7E4FF2;
-  color: #FFF;
-  padding: 20px;
-  border-radius: 10px;
-  z-index: 1000;
-  display: none;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 90%;
+max-width: 400px;
+background-color: #7E4FF2;
+color: #FFF;
+padding: 20px;
+border-radius: 10px;
+z-index: 1000;
+display: none;
 }
 
 .popup h2 {
-  margin-top: 0;
+margin-top: 0;
 }
 
 .popup form {
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 
 .popup label {
-  margin-top: 10px;
+margin-top: 10px;
 }
 
 .popup input[type="text"],
 .popup select,
 .popup textarea {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  font-size: 16px;
+padding: 10px;
+border: none;
+border-radius: 5px;
+margin-bottom: 20px;
+font-size: 16px;
 }
 
 .popup button[type="submit"],
 .popup .close-btn {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  margin-top: 10px;
-  cursor: pointer;
-  font-size: 16px;
+padding: 10px;
+border: none;
+border-radius: 5px;
+margin-top: 10px;
+cursor: pointer;
+font-size: 16px;
 }
 
 .popup button[type="submit"] {
-  background-color: #FFF;
-  color: #7E4FF2;
+background-color: #FFF;
+color: #7E4FF2;
 }
 
 .popup button[type="submit"]:hover {
-  background-color: #7E4FF2;
-  color: #FFF;
+background-color: #7E4FF2;
+color: #FFF;
 }
 
 .popup .close-btn {
-  background-color: #FFF;
-  color: #7E4FF2;
+background-color: #FFF;
+color: #7E4FF2;
 }
 
 .popup .close-btn:hover {
-  background-color: #7E4FF2;
-  color: #FFF;
+background-color: #7E4FF2;
+color: #FFF;
 }
 
 </style>
@@ -174,16 +173,16 @@ let popupInterval = setInterval(showPopup, 5000);
   <h1 class="animate">Two-tores</h1>
   <p class="animate">La aplicación perfecta para organizar tus tareas diarias.</p>
   <button class="animate" id="preregistro">Preregistro<i class='bx bxs-download bx'></i></button>
-  <div class="modal" id="modal">
+<!--  <div class="modal" id="modal">
     <div class="modal-content">
       <h2>Felicidades</h2>
       <p>Te acabas de pre-registrar para el lanzamiento de la aplicación Two-tores.</p>
       <button id="cerrar">Continuar</button>
     </div>
-  </div>
+  </div> -->
 </header>
 
-         <script>                   
+<!--         <script>                   
          
          const btn = document.querySelector(".animate");
 const popup = document.createElement("div");
@@ -206,9 +205,9 @@ popupBtn.addEventListener("click", function() {
 });
 
          
-         </script>
+         </script> -->
 
-<!-- <script>
+ <script>
 function mostrarPopUp() {
   // Crear el elemento de pop-up
   var popUp = document.createElement("div");
@@ -240,89 +239,261 @@ function ocultarPopUp() {
   var botonPreregistro = document.querySelector("button.animate");
   botonPreregistro.innerText = "Registrado";
 }
-</script> -->
+</script>
 
 <style>
 header {
-  text-align: center;
-  padding: 80px 0;
-  position: relative;
-  z-index: 0;
+text-align: center;
+padding: 80px 0;
+position: relative;
+z-index: 0;
 }
 
 header:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('https://picsum.photos/1200/800');
-  filter: blur(5px);
-  z-index: -1;
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url('https://picsum.photos/1200/800');
+filter: blur(5px);
+z-index: -1;
 }
 
 header .animate {
-  opacity: 0;
-  transform: translateY(50px);
-  animation: fadeInUp 1s ease-in-out forwards;
-  animation-delay: 0.3s;
+opacity: 0;
+transform: translateY(50px);
+animation: fadeInUp 1s ease-in-out forwards;
+animation-delay: 0.3s;
 }
 
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+from {
+opacity: 0;
+transform: translateY(50px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
 }
 
 button {
-  padding: 12px 28px;
-  border-radius: 50px;
-  border: none;
-  background-color: #4CAF50;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
+padding: 12px 28px;
+border-radius: 50px;
+border: none;
+background-color: #4CAF50;
+color: #fff;
+font-weight: bold;
+cursor: pointer;
 }
 
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  display: none;
-  justify-content: center;
-  align-items: center;
+.popup-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 1;
+display: none;
+justify-content: center;
+align-items: center;
 }
 
-.modal-content {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  text-align: center;
+.popup {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 400px;
+max-width: 90%;
+background-color: #7E4FF2;
+color: #FFF;
+padding: 20px;
+border-radius: 10px;
+z-index: 1000;
+display: none;
+}
+
+.popup h2 {
+margin-top: 0;
+}
+
+.popup form {
+display: flex;
+flex-direction: column;
+}
+
+.popup label {
+margin-top: 10px;
+}
+
+.popup input[type="text"],
+.popup select,
+.popup textarea {
+padding: 10px;
+border: none;
+border-radius: 5px;
+margin-bottom: 20px;
+font-size: 16px;
+}
+
+.popup button[type="submit"],
+.popup .close-btn {
+padding: 10px;
+border: none;
+border-radius: 5px;
+margin-top: 10px;
+cursor: pointer;
+font-size: 16px;
+}
+
+.popup button[type="submit"] {
+background-color: #FFF;
+color: #7E4FF2;
+}
+
+.popup button[type="submit"]:hover {
+background-color: #7E4FF2;
+color: #FFF;
+}
+
+.popup .close-btn {
+background-color: #FFF;
+color: #7E4FF2;
+}
+
+.popup .close-btn:hover {
+background-color: #7E4FF2;
+color: #FFF;
 }
 
 #cerrar {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
+padding: 10px 20px;
+background-color: #4CAF50;
+color: #fff;
+border: none;
+border-radius: 5px;
+font-weight: bold;
+cursor: pointer;
 }
 
 #cerrar:hover {
-  background-color: #3e8e41;
+background-color: #3e8e41;
 }
+  #popup {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #98FB98;
+color: #008000;
+text-align: center;
+padding: 10px;
+z-index: 9999;
+}
+
+#popup img {
+height: 25px;
+margin-right: 5px;
+}
+
+#popup span {
+font-size: 18px;
+font-weight: bold;
+}
+
+#popup.fade-in {
+opacity: 1;
+transition: opacity 1s ease-in-out;
+}
+
+.popup-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 999;
+display: none;
+}
+
+.popup {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 400px;
+max-width: 90%;
+background-color: #7E4FF2;
+color: #FFF;
+padding: 20px;
+border-radius: 10px;
+z-index: 1000;
+display: none;
+}
+
+.popup h2 {
+margin-top: 0;
+}
+
+.popup form {
+display: flex;
+flex-direction: column;
+}
+
+.popup label {
+margin-top: 10px;
+}
+
+.popup input[type="text"],
+.popup select,
+.popup textarea {
+padding: 10px;
+border: none;
+border-radius: 5px;
+margin-bottom: 20px;
+font-size: 16px;
+}
+
+.popup button[type="submit"],
+.popup .close-btn {
+padding: 10px;
+border: none;
+border-radius: 5px;
+margin-top: 10px;
+cursor: pointer;
+font-size: 16px;
+}
+
+.popup button[type="submit"] {
+background-color: #FFF;
+color: #7E4FF2;
+}
+
+.popup button[type="submit"]:hover {
+background-color: #7E4FF2;
+color: #FFF;
+}
+
+.popup .close-btn {
+background-color: #FFF;
+color: #7E4FF2;
+}
+
+.popup .close-btn:hover {
+background-color: #7E4FF2;
+color: #FFF;
+}
+
+
+
+
+
 
 </style>
 
