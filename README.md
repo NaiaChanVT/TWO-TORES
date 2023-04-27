@@ -13,26 +13,26 @@ Two-Tores es una aplicación de gestión de tareas para equipos de trabajo. La a
 - Integraciones: Two-Tores se integra con otras aplicaciones populares, como Slack y Google Calendar, para una mayor eficiencia y comodidad.
 
 ### Novedades
-Modo oscuro: Ahora puedes activar el modo oscuro en la aplicación para reducir la fatiga visual y ahorrar energía en dispositivos móviles.
+- Modo oscuro: Ahora puedes activar el modo oscuro en la aplicación para reducir la fatiga visual y ahorrar energía en dispositivos móviles.
 
-Etiquetas de tarea: Puedes añadir etiquetas a tus tareas para una mejor organización y filtrado.
+- Etiquetas de tarea: Puedes añadir etiquetas a tus tareas para una mejor organización y filtrado.
 
-Estadísticas de productividad: Los usuarios pueden ver estadísticas detalladas sobre su productividad, incluyendo el tiempo dedicado a cada tarea, el número de tareas completadas y más.
+- Estadísticas de productividad: Los usuarios pueden ver estadísticas detalladas sobre su productividad, incluyendo el tiempo dedicado a cada tarea, el número de tareas completadas y más.
 
-Notificaciones personalizadas: Ahora puedes personalizar las notificaciones para recibir recordatorios específicos para tareas y proyectos.
+- Notificaciones personalizadas: Ahora puedes personalizar las notificaciones para recibir recordatorios específicos para tareas y proyectos.
 
-Requisitos del sistema
+### Requisitos del sistema
 Two-Tores es una aplicación web y móvil y es compatible con los siguientes navegadores:
 
-Google Chrome (última versión)
-Mozilla Firefox (última versión)
-Safari (última versión)
-Microsoft Edge (última versión)
-La aplicación móvil es compatible con dispositivos iOS y Android con las siguientes versiones mínimas:
+- Google Chrome (última versión)
+- Mozilla Firefox (última versión)
+- Safari (última versión)
+- Microsoft Edge (última versión)
+- La aplicación móvil es compatible con dispositivos iOS y Android con las siguientes versiones mínimas:
 
-iOS 12
-Android 8.0
-Instalación
+- iOS 12
+- Android 8.0
+### Instalación
 Para acceder a la aplicación, simplemente visita nuestro sitio web en www.twotores.com o descarga nuestra aplicación móvil en la App Store o Google Play Store.
 
 ¡Gracias por usar Two-Tores! Si tienes alguna pregunta o problema, no dudes en ponerte en contacto con nuestro equipo de soporte en soporte@twotores.com.
