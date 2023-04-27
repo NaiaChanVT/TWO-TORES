@@ -155,7 +155,9 @@ button {
     width: calc(50% - 40px);
   }
 }
-
+h2{
+  text-aling: center;
+}
 
 
 /* Estilos para las capturas de pantalla */
