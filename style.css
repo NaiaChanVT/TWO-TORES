@@ -229,6 +229,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+      font-size: 2rem; /* o cualquier otro valor deseado */
 }
 
 .footer-social a {
@@ -293,7 +294,9 @@ footer {
     flex-basis: 100%;
     text-align: center;
     margin-bottom: 10px;
+    font-size: 2rem; /* o cualquier otro valor deseado */
   }
+
 
   .footer-payment {
     flex-basis: 100%;
