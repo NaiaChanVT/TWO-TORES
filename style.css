@@ -1,4 +1,8 @@
- /* Estilos para la barra de navegación */
+body {
+  overflow-y: hidden;
+}
+
+/* Estilos para la barra de navegación */
 nav {
   display: flex;
   justify-content: space-between;
